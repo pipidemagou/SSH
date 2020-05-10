@@ -15,15 +15,6 @@
 
   <package name="action" extends="struts-default" namespace="/">
     <!-- 拦截器配置 -->
-    <interceptors>
-      <interceptor name="userInterceptor" class="cn.itcast.action.UserInterceptor"></interceptor>
-      <interceptor-stack name="myStack">
-        <interceptor-ref name="defaultStack"></interceptor-ref>
-        <interceptor-ref name="userInterceptor"></interceptor-ref>
-      </interceptor-stack>
-    </interceptors>
-    <!-- 执行指定的拦截器 -->
-    <default-interceptor-ref name="myStack"></default-interceptor-ref>
     <action name="user_*" class="pipidemgua.action.UserAction" method="{1}">
       <result name="list">/list.jsp</result>
       <!--给出添加员工的界面-->

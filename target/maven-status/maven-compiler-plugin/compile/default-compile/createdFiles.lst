@@ -4,7 +4,6 @@ pipidemgua\action\AdminAction.class
 pipidemgua\dao\AdminDao.class
 pipidemgua\service\AdminService.class
 pipidemgua\action\UserAction.class
-pipidemgua\utils\PrivilegeInterceptor.class
 pipidemgua\service\UserService.class
 pipidemgua\domain\User.class
 pipidemgua\dao\BaseDao.class
