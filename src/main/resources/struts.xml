@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+  "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+  "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+  <!-- 禁用动态方法访问 -->
+  <constant name="struts.enable.DynamicMethodInvocation" value="true"/>
+  <!-- 配置成开发模式 -->
+  <constant name="struts.devMode" value="false"/>
+  <!-- 配置拓展名为action -->
+  <constant name="struts.action.extention" value="action"/>
+  <!-- 把主题配置成simple -->
+  <constant name="struts.ui.theme" value="simple"/>
+
+  <package name="action" extends="struts-default" namespace="/">
+    <!-- 拦截器配置 -->
+    <action name="user_*" class="pipidemgua.action.UserAction" method="{1}">
+      <result name="list">/list.jsp</result>
+      <!--给出添加员工的界面-->
+      <result name="viewAdd">/viewAdd.jsp</result>
+      <!--返回列表展示页面-->
+      <result name="listPage" type="redirectAction">user_list</result>
+      <!--提供修改页面-->
+      <result name="viewUpdate">/viewUpdate.jsp</result>
+      <allowed-methods>viewAdd,viewUpdate,delete,updateUser,addUser</allowed-methods>
+    </action>
+    <action name="admin_*" class="adminAction" method="{1}">
+      <result name="listPage">/list.jsp</result>
+      <allowed-methods>login,register</allowed-methods>
+    </action>
+  </package>
+</struts>

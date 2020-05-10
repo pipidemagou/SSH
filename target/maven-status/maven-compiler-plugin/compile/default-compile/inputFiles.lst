@@ -1,0 +1,13 @@
+E:\SSH\src\main\java\pipidemgua\action\AdminAction.java
+E:\SSH\src\main\java\pipidemgua\domain\Admin.java
+E:\SSH\src\main\java\pipidemgua\domain\User.java
+E:\SSH\src\main\java\pipidemgua\utils\PrivilegeInterceptor.java
+E:\SSH\src\main\java\pipidemgua\action\UserAction.java
+E:\SSH\src\main\java\pipidemgua\dao\AdminDao.java
+E:\SSH\src\main\java\pipidemgua\service\AdminService.java
+E:\SSH\src\main\java\pipidemgua\dao\BaseDao.java
+E:\SSH\src\main\java\pipidemgua\dao\UserDao.java
+E:\SSH\src\main\java\pipidemgua\service\DeptService.java
+E:\SSH\src\main\java\pipidemgua\dao\DeptDao.java
+E:\SSH\src\main\java\pipidemgua\service\UserService.java
+E:\SSH\src\main\java\pipidemgua\domain\Dept.java
